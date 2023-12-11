@@ -1,3 +1,5 @@
+import { ProjectInfo } from "./types";
+
 export const links = [
   {
     name: "Home",
@@ -22,5 +24,40 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
+  },
+];
+
+export const projectsData: ProjectInfo[] = [
+  {
+    title: "title",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "NodeJS"],
+    imageUrl: "/app-example.png",
+    link: "https://www.google.com",
+  },
+  {
+    title: "title",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "NodeJS"],
+    imageUrl: "/app-example.png",
+    link: "https://www.google.com",
+  },
+  {
+    title: "title",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "NodeJS"],
+    imageUrl: "/app-example.png",
+    link: "https://www.google.com",
+  },
+  {
+    title: "title",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "NodeJS"],
+    imageUrl: "/app-example.png",
+    link: "https://www.google.com",
   },
 ];
