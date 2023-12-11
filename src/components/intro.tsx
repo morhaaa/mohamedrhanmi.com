@@ -14,7 +14,11 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center">
+    <section
+      ref={ref}
+      id="home"
+      className="max-w-[50rem] text-center pt-32 pb-20"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
