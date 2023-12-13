@@ -1,6 +1,7 @@
 import React from "react";
 import ActiveSectionContextProvider from "./active-section";
 import { Toaster } from "react-hot-toast";
+import ThemeContextProvider from "./theme-context";
 
 type ProvidersProps = {
   children: React.ReactNode;
@@ -8,9 +9,11 @@ type ProvidersProps = {
 
 export default function Providers({ children }: ProvidersProps) {
   return (
-    <ActiveSectionContextProvider>
-      <Toaster />
-      {children}
-    </ActiveSectionContextProvider>
+    <ThemeContextProvider>
+      <ActiveSectionContextProvider>
+        <Toaster />
+        {children}
+      </ActiveSectionContextProvider>
+    </ThemeContextProvider>
   );
 }
