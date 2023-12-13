@@ -1,5 +1,6 @@
 import React from "react";
 import ActiveSectionContextProvider from "./active-section";
+import { Toaster } from "react-hot-toast";
 
 type ProvidersProps = {
   children: React.ReactNode;
@@ -7,6 +8,9 @@ type ProvidersProps = {
 
 export default function Providers({ children }: ProvidersProps) {
   return (
-    <ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
+    <ActiveSectionContextProvider>
+      <Toaster />
+      {children}
+    </ActiveSectionContextProvider>
   );
 }
