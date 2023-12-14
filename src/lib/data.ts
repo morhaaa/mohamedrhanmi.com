@@ -1,6 +1,6 @@
-import { ProjectInfo } from "./types";
+import { Link, ProjectInfo } from "./types";
 
-export const links = [
+export const links: Link[] = [
   {
     name: "Home",
     hash: "#home",

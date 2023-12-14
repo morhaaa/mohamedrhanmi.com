@@ -9,3 +9,8 @@ export type ProjectInfo = {
   imageUrl: string;
   link: string;
 };
+
+export type Link = {
+  name: string;
+  hash: string;
+};

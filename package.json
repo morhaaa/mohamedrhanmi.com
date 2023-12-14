@@ -13,6 +13,7 @@
     "@vercel/analytics": "^1.1.1",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.16",
+    "hamburger-react": "^2.5.0",
     "lucide-react": "^0.295.0",
     "next": "14.0.3",
     "react": "^18",
