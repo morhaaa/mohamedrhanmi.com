@@ -14,12 +14,12 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3 text-lg">
+      <p className="mb-3 text-xl">
         I am a highly skilled
         <span className="font-medium"> front-end developer</span>, with a solid
         foundation in HTML, CSS, and JavaScript. My core stack is{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB.
+          React, Next.js, Node.js, and MongoDB.{" "}
         </span>
         I am also familiar with TypeScript and Prisma. I am always looking to
         learn new technologies. I am currently looking for a{" "}
@@ -27,9 +27,9 @@ export default function About() {
         developer.
       </p>
 
-      <p>
-        <span className="italic text-lg"> Other than coding</span>, I spend my
-        free time doing sports, cooking new dishes and eating Pizza.{" "}
+      <p className="text-xl">
+        <span className="italic"> Other than coding</span>, I spend my free time
+        doing sports 🏋🏽‍♀️, cooking new dishes 🧆 and eating pizza 🍕.{" "}
       </p>
     </motion.section>
   );
