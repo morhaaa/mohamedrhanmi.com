@@ -4,7 +4,8 @@ import "./globals.css";
 import Header from "@/components/header";
 import Providers from "@/containers/providers";
 import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
+import ThemeSwitch from "@/components/theme-controller";
+import LanguageSwitch from "@/components/language-controller";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <LanguageSwitch />
           <ThemeSwitch />
         </Providers>
       </body>

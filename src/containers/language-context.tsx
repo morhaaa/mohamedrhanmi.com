@@ -2,7 +2,7 @@
 
 import React, { useState, createContext, useContext } from "react";
 
-type Language = "Ita" | "Eng";
+type Language = "It" | "En";
 
 type LanguageContextProviderProps = {
   children: React.ReactNode;
@@ -20,7 +20,7 @@ export default function LanguageContextProvider({
 }: LanguageContextProviderProps) {
   const [activeLanguage, setActiveLanguage] = useState<Language>(() => {
     const browserLanguage = navigator.language.toLowerCase();
-    return browserLanguage.startsWith("it") ? "Ita" : "Eng";
+    return browserLanguage.startsWith("it") ? "It" : "En";
   });
 
   return (
