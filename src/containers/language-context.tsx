@@ -35,7 +35,7 @@ export default function LanguageContextProvider({
   );
 }
 
-export function useLanguageContext() {
+export function useLanguage() {
   const context = useContext(LanguageContext);
 
   if (context === null) {
