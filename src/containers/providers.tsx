@@ -3,6 +3,7 @@ import ActiveSectionContextProvider from "./active-section";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "react-hot-toast";
 import ThemeContextProvider from "./theme-context";
+import LanguageContextProvider from "./language-context";
 
 type ProvidersProps = {
   children: React.ReactNode;
@@ -10,12 +11,14 @@ type ProvidersProps = {
 
 export default function Providers({ children }: ProvidersProps) {
   return (
-    <ThemeContextProvider>
-      <ActiveSectionContextProvider>
-        <Analytics />
-        <Toaster />
-        {children}
-      </ActiveSectionContextProvider>
-    </ThemeContextProvider>
+    <LanguageContextProvider>
+      <ThemeContextProvider>
+        <ActiveSectionContextProvider>
+          <Analytics />
+          <Toaster />
+          {children}
+        </ActiveSectionContextProvider>
+      </ThemeContextProvider>
+    </LanguageContextProvider>
   );
 }
