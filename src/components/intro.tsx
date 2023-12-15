@@ -3,15 +3,17 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/useInView";
 import { useActiveSectionContext } from "@/containers/active-section";
+import { useLanguage } from "@/containers/language-context";
+import { Mail } from "lucide-react";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { languageStrings } = useLanguage();
 
   return (
     <section
@@ -60,11 +62,13 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I'm <span className="font-bold">Mohamed Rhanmi</span>, a{" "}
-        <span className="font-bold">front-end developer</span>. I'm specialized
-        in building dynamic and user-friendly
-        <span className="italic">websites and applications</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        {languageStrings.intro.greetings}{" "}
+        <span className="font-bold">Mohamed Rhanmi,</span>{" "}
+        {languageStrings.intro.job}{" "}
+        <span className="font-bold">front-end developer</span>,{" "}
+        {languageStrings.intro.specialized}
+        <span className="italic"></span>. {languageStrings.intro.focus}{" "}
+        <span className="underline">React (NextJs)</span>.
       </motion.h1>
 
       <motion.div
@@ -83,18 +87,8 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          {languageStrings.intro.contact} <Mail color={"#9ca3af"} />
         </Link>
-
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/cv.pdf"
-          download
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
