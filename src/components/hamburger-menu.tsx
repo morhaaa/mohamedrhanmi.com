@@ -37,7 +37,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
         whileTap="tap"
         whileHover="hover"
       >
-        <Hamburger toggled={isOpen} toggle={setIsOpen} size={25} />
+        <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
       </motion.button>
       <AnimatePresence>
         {isOpen && (
