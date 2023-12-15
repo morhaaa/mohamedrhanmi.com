@@ -16,7 +16,7 @@ export type Link = {
 };
 
 //text-lanaguages
-export type Intro = {
+type Intro = {
   greetings: string;
   job: string;
   based: string;
@@ -25,6 +25,18 @@ export type Intro = {
   focus: string;
   contact: string;
 };
+
+type About = {
+  title: string;
+  im: string;
+  job: string;
+  description: string;
+  stacks: string;
+  otherStacks: string;
+  otherPassion: string;
+  conclusion: string;
+};
 export type Texts = {
   intro: Intro;
+  about: About;
 };

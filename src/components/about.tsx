@@ -3,8 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
+import { useLanguage } from "@/containers/language-context";
 
 export default function About() {
+  const { languageStrings } = useLanguage();
+
   return (
     <motion.section
       className="max-w-[45rem] text-center leading-8 mb-28 sm:mb-40 scroll-mt-28"
@@ -13,23 +16,18 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>{languageStrings.about.title}</SectionHeading>
       <p className="mb-3 text-xl">
-        I am a highly skilled
-        <span className="font-medium"> front-end developer</span>, with a solid
-        foundation in HTML, CSS, and JavaScript. My core stack is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB.{" "}
-        </span>
-        I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        {languageStrings.about.im}{" "}
+        <span className="font-medium">{languageStrings.about.job}</span>,{" "}
+        {languageStrings.about.description}{" "}
+        <span className="font-medium">{languageStrings.about.stacks}. </span>
+        {languageStrings.about.otherStacks}.
       </p>
 
       <p className="text-xl">
-        <span className="italic"> Other than coding</span>, I spend my free time
-        doing sports 🏋🏽‍♀️, cooking new dishes 🧆 and eating pizza 🍕.{" "}
+        <span className="italic">{languageStrings.about.otherPassion}</span>,{" "}
+        {languageStrings.about.conclusion}{" "}
       </p>
     </motion.section>
   );
