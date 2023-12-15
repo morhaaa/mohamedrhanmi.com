@@ -1,6 +1,9 @@
 "use client";
 
 import React, { useState, createContext, useContext } from "react";
+import it from "@/languages/it";
+import en from "@/languages/en";
+import { Texts } from "@/lib/types";
 
 type Language = "It" | "En";
 
@@ -11,6 +14,7 @@ type LanguageContextProviderProps = {
 type LanguageContextType = {
   activeLanguage: Language;
   setActiveLanguage: React.Dispatch<React.SetStateAction<Language>>;
+  languageStrings: Texts;
 };
 
 export const LanguageContext = createContext<LanguageContextType | null>(null);
@@ -22,12 +26,14 @@ export default function LanguageContextProvider({
     const browserLanguage = navigator.language.toLowerCase();
     return browserLanguage.startsWith("it") ? "It" : "En";
   });
+  const languageStrings = activeLanguage === "En" ? en : it;
 
   return (
     <LanguageContext.Provider
       value={{
         activeLanguage,
         setActiveLanguage,
+        languageStrings,
       }}
     >
       {children}
