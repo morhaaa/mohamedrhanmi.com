@@ -6,9 +6,11 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/useInView";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { useLanguage } from "@/containers/language-context";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const { activeLanguage } = useLanguage();
 
   const [senderEmail, setSenderEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
@@ -57,10 +59,14 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>
+        {activeLanguage === "It" ? "Contatami" : "Contact Me"}
+      </SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Feel free to contact me directly through this form
+        {activeLanguage === "It"
+          ? "Non esitare a contattarmi tramite questo form"
+          : "Feel free to contact me directly through this form"}
       </p>
 
       <form
@@ -73,20 +79,22 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder={activeLanguage === "It" ? "La tua mail" : "Your email"}
           value={senderEmail}
           onChange={(e) => setSenderEmail(e.target.value)}
         />
         <textarea
           className="h-52 my-3 rounded-lg resize-none borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder={
+            activeLanguage === "It" ? "Il tuo messaggio" : "Your email"
+          }
           required
           maxLength={5000}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <SubmitBtn />
+        <SubmitBtn text={activeLanguage === "It" ? "Invia" : "Submit"} />
       </form>
     </motion.section>
   );
