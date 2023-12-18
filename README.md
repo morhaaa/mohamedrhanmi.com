@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio
 
-## Getting Started
+Welcome to my personal portfolio repository! Feel free to check out my live portfolio at https://www.mohamedrhanmi.com/. I hope my portfolio inspires you or provides insights for your personal project.
+Here you'll find the source code for my portfolio website, built with Next.js v14. I drew inspiration from this fantastic GitHub project: [portfolio-website](https://github.com/ByteGrad/portfolio-website).
 
-First, run the development server:
+## Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js v14:** My portfolio has been developed using the latest version of Next.js, offering improved performance and new features.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dark/Light Mode:** I provide a dark mode for a more comfortable viewing experience in low-light conditions. You can easily toggle between dark and light modes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Language Switching:** The portfolio supports both Italian and English. You can easily switch the language through a simple selector.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage Instructions
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/YourUsername/portfolio.git
+   cd portfolio
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Configuration:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   - Modify configuration files to tailor the portfolio to your needs.
+   - Customize content in your preferred languages.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **View your portfolio:**
+   - Open your browser and go to [http://localhost:3000](http://localhost:3000) to view your portfolio in development mode.
+
+## Contributions
+
+If you'd like to contribute to the improvement of my portfolio, you're welcome! Just follow these steps:
+
+1. Fork the repository.
+2. Create a branch for your work: `git checkout -b feature/new-feature`.
+3. Make your changes and commit: `git commit -m "Added new feature"`.
+4. Push your changes to your fork: `git push origin feature/new-feature`.
+5. Open a pull request in my repository.
+
+## Acknowledgments
+
+Special thanks to the creator of the [portfolio-website](https://github.com/ByteGrad/portfolio-website) project for the inspiration and ideas that contributed to making my portfolio unique.
+
+Thank you for visiting my repository! I hope my portfolio inspires you or provides insights for your personal project.
