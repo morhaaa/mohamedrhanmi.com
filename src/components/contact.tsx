@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 import { useLanguage } from "@/containers/language-context";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("#contact");
   const { activeLanguage } = useLanguage();
 
   const [senderEmail, setSenderEmail] = useState<string>("");

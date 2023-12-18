@@ -1,6 +1,6 @@
 import { links } from "./data";
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName = (typeof links)[number]["hash"];
 
 export type ProjectInfo = {
   title: string;
@@ -11,7 +11,8 @@ export type ProjectInfo = {
 };
 
 export type Link = {
-  name: string;
+  nameEng: string;
+  nameIta: string;
   hash: string;
 };
 

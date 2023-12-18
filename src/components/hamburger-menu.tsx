@@ -8,6 +8,7 @@ import NextLink from "next/link";
 import { useActiveSectionContext } from "@/containers/active-section";
 import { Menu } from "lucide-react";
 import Hamburger from "hamburger-react";
+import { useLanguage } from "@/containers/language-context";
 
 type HamburgerMenuProps = { links: Link[] };
 
@@ -16,6 +17,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
 
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+  const { activeLanguage } = useLanguage();
 
   const menuTrigger = {
     visible: { scale: 1, opacity: 0.7, y: 0 },
@@ -59,18 +61,18 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
                     "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300 cursor-pointer",
                     {
                       "text-gray-950 bg-slate-200 dark:text-gray-200 dark:bg-gray-700 rounded":
-                        activeSection === link.name,
+                        activeSection === link.hash,
                       "rounded-t-xl round": index === 0,
                       "rounded-b-xl round": index === links.length - 1,
                     }
                   )}
                   href={link.hash}
                   onClick={() => {
-                    setActiveSection(link.name);
+                    setActiveSection(link.hash);
                     setTimeOfLastClick(Date.now());
                   }}
                 >
-                  {link.name}
+                  {activeLanguage === "It" ? link.nameIta : link.nameEng}
                 </NextLink>
               </motion.div>
             ))}

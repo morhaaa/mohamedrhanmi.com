@@ -2,27 +2,28 @@ import { Link, ProjectInfo } from "./types";
 
 export const links: Link[] = [
   {
-    name: "Home",
+    nameEng: "Home",
+    nameIta: "Home",
     hash: "#home",
   },
   {
-    name: "About",
+    nameEng: "About",
+    nameIta: "Chi sono",
     hash: "#about",
   },
   {
-    name: "Projects",
+    nameEng: "Projects",
+    nameIta: "Progetti",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    nameEng: "Skills",
+    nameIta: "Skills",
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
+    nameEng: "Contact",
+    nameIta: "Contatti",
     hash: "#contact",
   },
 ];

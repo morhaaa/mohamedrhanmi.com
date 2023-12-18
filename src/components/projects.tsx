@@ -8,7 +8,7 @@ import { useSectionInView } from "@/lib/useInView";
 import { useLanguage } from "@/containers/language-context";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("#projects", 0.5);
 
   const { activeLanguage } = useLanguage();
 

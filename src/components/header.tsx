@@ -6,12 +6,14 @@ import NextLink from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/containers/active-section";
 import { Link } from "@/lib/types";
+import { useLanguage } from "@/containers/language-context";
 
 type HeaderProps = { links: Link[] };
 
 export default function Header({ links }: HeaderProps) {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+  const { activeLanguage } = useLanguage();
 
   return (
     <header className="hidden md:flex items-center justify-center fixed z-[999] w-full mt-4">
@@ -33,18 +35,17 @@ export default function Header({ links }: HeaderProps) {
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
                     "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
+                      activeSection === link.hash,
                   }
                 )}
                 href={link.hash}
                 onClick={() => {
-                  setActiveSection(link.name);
+                  setActiveSection(link.hash);
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                {link.name}
-
-                {link.name === activeSection && (
+                {activeLanguage === "It" ? link.nameIta : link.nameEng}
+                {link.hash === activeSection && (
                   <motion.span
                     className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                     layoutId="activeSection"
