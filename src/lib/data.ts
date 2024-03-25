@@ -11,11 +11,11 @@ export const links: Link[] = [
     nameIta: "Chi sono",
     hash: "#about",
   },
-  {
-    nameEng: "Projects",
-    nameIta: "Progetti",
-    hash: "#projects",
-  },
+  // {
+  //   nameEng: "Projects",
+  //   nameIta: "Progetti",
+  //   hash: "#projects",
+  // },
   {
     nameEng: "Skills",
     nameIta: "Skills",
