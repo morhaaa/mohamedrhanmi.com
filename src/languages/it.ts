@@ -16,13 +16,12 @@ const it: Texts = {
     im: "Sono uno",
     job: "sviluppatore front-end",
     description:
-      "altamente competente Le tecnologie che uso principalmente sono",
+      "con esperienza nello sviluppo di siti e applicazioni web responsive utilizzando moderni framework front-end. Il mio stack principale è",
     stacks: "React, Next.js, Node.js e TypeScript",
-    otherStacks:
-      "Utilizzo anche MongoDB e Prisma. Sono sempre alla ricerca di nuove tecnologie da apprendere",
+    otherStacks: "Inoltre utilizzo MongoDB e Prisma",
     otherPassion: "",
     conclusion:
-      "Sono focalizzato sul creare soluzioni che soddisfino le esigenze degli utenti. Attraverso una combinazione di creatività e competenza tecnica, mi impegno a fornire prodotti digitali di alta qualità. Per saperne di più sul mio lavoro, dai un'occhiata ai progetti che ho realizzato finora.",
+      "Per saperne di più sul mio lavoro, dai un'occhiata ai progetti che ho realizzato finora.",
   },
 };
 
