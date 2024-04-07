@@ -12,17 +12,17 @@ const it: Texts = {
     contact: "Contatami",
   },
   about: {
-    title: "Chi sono",
+    title: "Chi sono ",
     im: "Sono uno",
     job: "sviluppatore front-end",
     description:
-      "altamente competente, con una solida base in HTML, CSS e JavaScript. Le tecnologie che uso principalmente sono",
-    stacks: "React, Next.js, Node.js e MongoDB",
+      "altamente competente Le tecnologie che uso principalmente sono",
+    stacks: "React, Next.js, Node.js e TypeScript",
     otherStacks:
-      "Utilizzo anche TypeScript e Prisma. Sono sempre alla ricerca di nuove tecnologie da apprendere",
-    otherPassion: "Oltre a programmare",
+      "Utilizzo anche MongoDB e Prisma. Sono sempre alla ricerca di nuove tecnologie da apprendere",
+    otherPassion: "",
     conclusion:
-      "trascorro il mio tempo libero praticando sport 🏋🏽‍♀️, cucinando nuovi piatti 🧆 e mangiando pizza 🍕.",
+      "Sono focalizzato sul creare soluzioni che soddisfino le esigenze degli utenti. Attraverso una combinazione di creatività e competenza tecnica, mi impegno a fornire prodotti digitali di alta qualità. Per saperne di più sul mio lavoro, dai un'occhiata ai progetti che ho realizzato finora.",
   },
 };
 

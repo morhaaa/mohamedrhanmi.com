@@ -29,7 +29,7 @@ export default function About() {
       </p>
 
       <p className="text-xl">
-        <span className="italic">{languageStrings.about.otherPassion}</span>,{" "}
+        <span className="italic">{languageStrings.about.otherPassion}</span>{" "}
         {languageStrings.about.conclusion}{" "}
       </p>
     </motion.section>

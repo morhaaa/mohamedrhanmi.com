@@ -14,15 +14,14 @@ const en: Texts = {
   about: {
     title: "About Me",
     im: "I am a highly skilled ",
-    job: " front-end developer",
-    description:
-      "with a solid foundation in HTML, CSS, and JavaScript. My core stack is",
-    stacks: "React, Next.js, Node.js, and MongoDB",
+    job: " front-end developer.",
+    description: "My core stack is",
+    stacks: "React, Next.js, Node.js, and TypeScript",
     otherStacks:
-      "I am also familiar with TypeScript and Prisma. I am always looking to learn new technologies",
-    otherPassion: "Other than coding",
+      "I am also familiar with MongoDB and Prisma. I am always looking to learn new technologies",
+    otherPassion: "",
     conclusion:
-      "I spend my free time doing sports 🏋🏽‍♀️, cooking new dishes 🧆 and eating pizza 🍕.",
+      "I am focused on creating solutions that meet user needs. Through a combination of creativity and technical expertise, I am committed to delivering high-quality digital products. To discover more about my work, take a look at the projects I have completed so far.",
   },
 };
 
