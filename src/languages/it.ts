@@ -16,12 +16,12 @@ const it: Texts = {
     im: "Sono uno",
     job: "sviluppatore front-end",
     description:
-      "con esperienza nello sviluppo di siti e applicazioni web responsive utilizzando moderni framework front-end. Il mio stack principale è",
+      "con esperienza nello sviluppo di siti e applicazioni web responsive utilizzando moderni framework. Il mio stack principale è",
     stacks: "React, Next.js, Node.js e TypeScript",
     otherStacks: "Inoltre utilizzo MongoDB e Prisma",
     otherPassion: "",
     conclusion:
-      "Per saperne di più sul mio lavoro, dai un'occhiata ai progetti che ho realizzato finora.",
+      "Per saperne di più sul mio lavoro, dai un'occhiata ai lavori che ho realizzato finora.",
   },
 };
 

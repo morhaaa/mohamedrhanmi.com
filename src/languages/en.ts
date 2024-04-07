@@ -21,7 +21,7 @@ const en: Texts = {
     otherStacks: "I am also familiar with MongoDB and Prisma",
     otherPassion: "",
     conclusion:
-      "To discover more about my work, take a look at the projects I have completed so far.",
+      "To discover more about my work, take a look at the work I have completed so far.",
   },
 };
 
