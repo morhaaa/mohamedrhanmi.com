@@ -9,7 +9,7 @@ const it: Texts = {
     specialized:
       "specializzato in creazione di siti web dinamici e user-friendly",
     focus: "Lavoro con",
-    contact: "Contatami",
+    contact: "Contattami",
   },
   about: {
     title: "Chi sono ",
