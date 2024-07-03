@@ -25,12 +25,12 @@ export default function About() {
         <span className="font-medium">{languageStrings.about.job}</span>,{" "}
         {languageStrings.about.description}{" "}
         <span className="font-medium">{languageStrings.about.stacks}. </span>
-        {languageStrings.about.otherStacks}.
+        {/* {languageStrings.about.otherStacks}. */}
       </p>
 
       <p className="text-xl">
-        <span className="italic">{languageStrings.about.otherPassion}</span>{" "}
-        {languageStrings.about.conclusion}{" "}
+        <span className="italic">{languageStrings.about.otherPassion}</span>
+        {/*languageStrings.about.conclusion*/}
       </p>
     </motion.section>
   );
